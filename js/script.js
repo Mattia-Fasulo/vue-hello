@@ -10,10 +10,10 @@ const { createApp } = Vue;
 const app = createApp({
     data(){
         return {
-            classContainer: 'container d-flex justify-content-center',
+            classContainer: 'container',
             classCard: 'card',
             classCardImg: 'card-img-top',
-            urlImg: 'https://picsum.photos/200/300',
+            urlImg: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Icecat1-300x300.svg',
             altImg: 'picsum_photo',
             classCardBody: 'card-body',
             classCardText: 'card-text text-center',
@@ -23,7 +23,7 @@ const app = createApp({
     },
     methods: {
         changeImg() {
-            this.urlImg = (this.urlImg == 'https://picsum.photos/200/300') ? this.urlImg = 'https://picsum.photos/seed/picsum/200/300' : 'https://picsum.photos/200/300';
+            this.urlImg = (this.urlImg == 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Icecat1-300x300.svg') ? this.urlImg = 'https://www.incasummer.ca/wp-content/uploads/2022/05/Audacity_Logo_nofilter.svg_-300x300.png' : 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Icecat1-300x300.svg';
         }
     }
 })
