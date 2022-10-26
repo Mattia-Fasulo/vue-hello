@@ -31,12 +31,13 @@
 
 
 
-  <div id="app">
+  <div id="app" class="">
     <div v-bind:class='classContainer'>
       <div :class='classCard'>
         <img :src='urlImg' :class="classCardImg" :alt="altImg">
         <div :class="classCardBody">
           <h1 :class="classCardText">{{ text }}</h1>
+          <button @click="changeImg" :class="classBtn">Change</button>
         </div>
     
       </div>
